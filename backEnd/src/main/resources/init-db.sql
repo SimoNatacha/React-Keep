@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` INT(6) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id`)
+);

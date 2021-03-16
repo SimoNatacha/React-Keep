@@ -1,0 +1,91 @@
+.card-note{
+
+    width: 240px;
+    background-color: white;
+    .check{
+        // background-color: green;
+        color: white;
+        // padding: 10px;
+        // width: 20px;
+        height: 20px;
+        position: absolute;
+  left: 1px;
+display: none;
+        top: 1px;
+    }
+.headerNote{
+    width: 88%;
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    min-height: 30px;
+    min-height: 50px;
+    padding: 4px 16px 12px 5px;
+    color: #202124;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    outline: none;
+    white-space: pre-wrap;
+}
+.content{
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    border-color: #e0e0e0;
+  min-height: 140px;
+}
+
+}
+.all{
+    position: relative;
+    padding: 10px;
+}
+.down-notes{
+    display: none;
+    justify-content: space-between;
+}
+.lower-notes{
+    position: fixed;
+}
+.note-content{
+    font-family: 'Google Sans',Roboto,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    min-height: 30px;
+    padding: 4px 16px 12px 5px;
+    color: #202124;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    outline: none;
+    white-space: pre-wrap;
+   
+}
+.pinNote{
+    display: none;
+}
+.Nbold{
+    font-weight: normal !important;
+}
+.content:hover{
+
+    
+}
+.card-note:hover{
+    .check,.pinNote{
+        display: block;
+    }
+    .down-notes{
+display: flex;
+    }
+}
+
+
+.shadow-round {
+    -webkit-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.75)!important;
+    -moz-box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.75)!important;
+    box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.75)!important;
+  }
