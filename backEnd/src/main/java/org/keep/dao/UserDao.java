@@ -150,7 +150,7 @@ public class UserDao {
 
     }
 
-    public static Object getGuByEmail(String googleId) {
+    public static Object    getGuByEmail(String googleId) {
         if (CheckGuExists(googleId)){
 
             CriteriaBuilder cb = session.getCriteriaBuilder();

@@ -23,89 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc33351b-64d8-476d-a83c-0b1cfc34d55d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backEnd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedule-white-24dp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/connector/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/constants/constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/corsPolicy/CORSFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/dao/NoteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/entities/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/entities/compositeID/CompositeId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/helper/JwTokenHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/jjwtFilter/JsTokenFilterNeeded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/jjwtFilter/JwtCustomToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/resources/NoteResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/resources/UserResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/response/Respond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/utils/EmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keep/utils/GoogleIdTokenVerifie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/init-db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/assets/Icons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/assets/images/logo-google-keep.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/assets/images/undraw_Login_re_4vu2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/assets/images/undraw_completing_6bhr.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/Delet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/archive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/basket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/labels.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/modify-labels.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/notes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/public/reminders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/rightContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/layout/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/BarNote.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/default-Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/error-Div.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/label-input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/note-card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/ui/success-Div.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/App.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/addUsers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/bar-note.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/card-note.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/commons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/defautButton.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/errorDiv.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/mediaQueries.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/common/successDiv.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/public/notes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/rightBar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utils/core.utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keep/corsPolicy/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keep/corsPolicy/CORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keep/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keep/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/corsPolicy/CORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/corsPolicy/CORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/dao/NoteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/dao/NoteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/resources/UserResources.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/resources/UserResources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/utils/EmailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/utils/EmailUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keep/utils/EmailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keep/utils/EmailUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/node_modules/cors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/node_modules/cors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/api/user.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/api/user.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/auth/Google/LoginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/auth/Google/LoginAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/auth/Google/SignUpAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/auth/Google/SignUpAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/containers/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/containers/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/containers/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/controller/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/controller/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/redux/actions/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/redux/actions/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/styles/common/addUsers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/styles/common/addUsers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontEnd/src/utils/core.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontEnd/src/utils/core.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,22 +175,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="461" y="158" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1615205793363" />
-    <state width="1320" height="310" key="GridCell.Tab.0.bottom" timestamp="1615379772269">
+    <state width="637" height="111" key="GridCell.Tab.0.bottom" timestamp="1616433150413">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="310" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1615379772269" />
-    <state width="1320" height="310" key="GridCell.Tab.0.center" timestamp="1615379772268">
+    <state width="637" height="111" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1616433150413" />
+    <state width="637" height="111" key="GridCell.Tab.0.center" timestamp="1616433150413">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="310" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1615379772268" />
-    <state width="1320" height="310" key="GridCell.Tab.0.left" timestamp="1615379772267">
+    <state width="637" height="111" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1616433150413" />
+    <state width="637" height="111" key="GridCell.Tab.0.left" timestamp="1616433150412">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="310" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1615379772267" />
-    <state width="1320" height="310" key="GridCell.Tab.0.right" timestamp="1615379772268">
+    <state width="637" height="111" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1616433150412" />
+    <state width="637" height="111" key="GridCell.Tab.0.right" timestamp="1616433150413">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="310" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1615379772268" />
+    <state width="637" height="111" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1616433150413" />
     <state width="1320" height="371" key="GridCell.Tab.1.bottom" timestamp="1614425160333">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
