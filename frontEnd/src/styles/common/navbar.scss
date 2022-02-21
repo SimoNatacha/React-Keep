@@ -1,11 +1,11 @@
 .nav-bar {
   height: 65px;
-  flex-flow: row nowrap;
-  display: inline-flex;
   box-shadow: inset 0 -1px 0 0 #dadce0;
   z-index: 986;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
-  width: 214vh;
+  width: 100%;
   position: fixed;
   max-width: 250vh;
 }
@@ -81,7 +81,7 @@
 .search-div {
   height: 48px;
   width: 720px;
-  margin: 7px 50px 2px 0px;
+  //   margin: 7px 50px 2px 0px;
   // background: #f1f3f4;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -117,12 +117,11 @@
   margin: 3px 10px;
 }
 .icons-end {
-  border: "2px solid red" !important;
   //   margin: 2px 5px 2px 50px;
-  //   justify-self: end;
-  //   width: 300px;
+  justify-self: end;
+  width: 25%;
   //   max-width: 300px;
-  //   justify-content: space-between;
+  justify-content: space-around;
 
   .refresh-mode {
     width: 150px;

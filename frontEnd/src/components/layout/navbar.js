@@ -29,7 +29,7 @@ const Navbar = () => {
   }
 const color="#4f4f4fd2"
   return (
-    <div className="nav-bar dp-f ">
+    <div className="dp-f nav-bar  ">
       <div className="keep-icon dp-f ">
         <div className="list-3 icon">
           <Icons focusable="false" name="Menu"   className="icons-n" color={color}/>
@@ -81,7 +81,7 @@ const color="#4f4f4fd2"
           )}
         </form>
       </div>
-      <div className="dp-f icons-end">
+      <div className="dp-f icons-end" >
         <div className="dp-f refresh-mode ">
           <div className="icon" >
             <Icons focusable="false" name="Refresh"   className="icons-n  " color={color}/>
