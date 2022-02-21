@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
- const Delet = () => {
-    return (
-        <div className="right-bar">
+const Delet = () => {
+	return (
+		<div className="right-bar">
            Delete 
-        </div>
-    )
-}
-export default Delet
+		</div>
+	);
+};
+export default Delet;

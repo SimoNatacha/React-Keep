@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
- const Reminders = () => {
-    return (
-        <div className="right-bar">
+const Reminders = () => {
+	return (
+		<div className="right-bar">
         Reminders
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officiis, temporibus cum facilis optio quas architecto, accusamus iusto tenetur quo quibusdam dolore dolor harum nisi quia sint nesciunt, doloremque adipisci.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos quas pariatur ut dicta saepe voluptatem consequuntur distinctio. Facilis error enim labore sunt quaerat ad ipsa ut officiis impedit architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestias eum molestiae quia cupiditate illum, modi nobis nesciunt necessitatibus quasi enim architecto quisquam maxime nulla at totam! Excepturi, vero culpa.b Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae provident ea ex accusamus maiores eveniet. At, temporibus corrupti harum aut libero labore officiis, eaque numquam sint nam aspernatur illo cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sunt sit aliquid voluptas. Incidunt totam cupiditate ratione sunt sapiente, sit enim aliquam iste similique eos amet, animi molestiae ipsa maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptates omnis, vero obcaecati minima nostrum laudantium mollitia, deleniti hic blanditiis, ea odit animi? Earum, aspernatur rem. Eum enim ipsa laudantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quo sit delectus, veniam rem incidunt nulla laboriosam aspernatur fuga aliquid? Tempora, atque? Praesentium sit ab, et expedita beatae iure exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ratione, quae dolores ullam voluptatibus qui iste aliquam quasi consequuntur temporibus ad earum illum laborum nemo error optio fugiat, rerum assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, labore. Enim maiores, magni alias odit voluptatem id quidem veritatis excepturi quibusdam asperiores suscipit similique, accusantium repudiandae praesentium velit debitis error?
-        </div>
-    )
-}
+		</div>
+	);
+};
 export default Reminders;

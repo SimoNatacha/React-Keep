@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
- const button = ({name}) => {
-    return (
-        <div className="row">
+const button = ({name}) => {
+	return (
+		<div className="row">
         
-        <button id="defaultbutton" className="br-5 b-1s"> {name}</button>
+			<button id="defaultbutton" className="br-5 b-1s"> {name}</button>
   
-        </div>
-    )
-}
+		</div>
+	);
+};
 export default button;

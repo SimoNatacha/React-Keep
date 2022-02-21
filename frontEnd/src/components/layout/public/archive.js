@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
- const Archive = () => {
-    return (
-        <div className="right-bar">
+const Archive = () => {
+	return (
+		<div className="right-bar">
         Archive
-        </div>
-    )
-}
+		</div>
+	);
+};
 export default Archive;

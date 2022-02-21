@@ -4,7 +4,7 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 
 import reducers from './reducers/main';
 
-const initialState ={}
+const initialState ={};
 
 const middleware = applyMiddleware( thunk);
 

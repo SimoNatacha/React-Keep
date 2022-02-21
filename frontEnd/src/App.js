@@ -1,23 +1,23 @@
-import React from "react";
-import {  Route, Redirect, Switch } from "react-router-dom";
+import React from 'react';
+import {  Route, Redirect, Switch } from 'react-router-dom';
 
-import "./styles/App.scss";
-import LoginContainer from "./containers/Login";
-import SignupContainer from "./containers/Signup";
-import Dashboard from "./containers/Dashboard";
+import './styles/App.scss';
+import LoginContainer from './containers/Login';
+import SignupContainer from './containers/Signup';
+import Dashboard from './containers/Dashboard';
 
 function App() {
-  return (
-    <Switch>
-      <Route exact path="/login" component={LoginContainer} />
-      <Route exact path="/signup" component={SignupContainer} />
-      <Route    path="/dashboard" component={Dashboard} />
+	return (
+		<Switch>
+			<Route exact path="/login" component={LoginContainer} />
+			<Route exact path="/signup" component={SignupContainer} />
+			<Route    path="/dashboard" component={Dashboard} />
 
-      <Route exact path="/">
-        <Redirect to="/signup" />
-      </Route>
-    </Switch>
-  );
+			<Route exact path="/">
+				<Redirect to="/signup" />
+			</Route>
+		</Switch>
+	);
 }
 
 export default App;

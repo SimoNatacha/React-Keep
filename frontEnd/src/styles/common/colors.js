@@ -1,8 +1,8 @@
 export const primaryColor = {
-    backgroundColor: '#DE972C',
+	backgroundColor: '#DE972C',
 
 };
 export  const secondaryColor = {
-    backgroundColor: '#F5CF89',
+	backgroundColor: '#F5CF89',
 
 };

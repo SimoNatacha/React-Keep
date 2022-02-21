@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
- const ModifyLabels = () => {
-    return (
-        <div className="right-bar">
+const ModifyLabels = () => {
+	return (
+		<div className="right-bar">
         ModifyLabels
-        </div>
-    )
-}
+		</div>
+	);
+};
 export default ModifyLabels;
