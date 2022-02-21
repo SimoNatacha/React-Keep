@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 // import PropTypes from 'prop-types';
 import GoggleKepp from "../assets/images/logo-google-keep.png";
 import LandingLogin from "../assets/images/undraw_Login_re_4vu2.svg";
@@ -9,17 +9,15 @@ import { useDispatch } from "react-redux";
 import { LoginU } from "../redux/actions/user";
 import DefaultButton from "../components/ui/default-Button";
 import LoginAuth from "../auth/Google/LoginAuth";
-
+// import LoginOutAuth from "../auth/Google/SignOutAuth";
 const LoginForm = () => {
   const history = useHistory();
-
   const [visibility, setVisisbility] = useState(false);
   const dispatch = useDispatch();
 
-  useEffect( () => {
-sessionStorage.clear();
-
-  },[]);
+  useEffect(() => {
+    sessionStorage.clear();
+  });
 
   const [state, setState] = useState({
     email: "",
@@ -40,51 +38,57 @@ sessionStorage.clear();
   };
 
   const validate = () => {
-
     const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!state.email || reg.test(state.email) === false) {
-
-      toastError("Email Field is Invalid")
+      toastError("Email Field is Invalid");
       return false;
     }
-    if (isEmptyOrNull(state.password) ||isEmptyOrNull(state.email)
-    ) {
-      toastError("All Fields are Empty")
+    if (isEmptyOrNull(state.password) || isEmptyOrNull(state.email)) {
       return false;
-    } else{
+    } else {
       return true;
     }
-
-
   };
   const validator = async () => {
-
-
-    
-    if(validate()){
-
+    if (validate()) {
       await dispatch(LoginU(state));
 
-      if (sessionStorage.getItem("Token") === null){
-
+      if (sessionStorage.getItem("Token") === null) {
         sessionStorage.clear();
         history.push("/");
-    
-
-      }else{
-     
+      } else {
         history.push("/dashboard");
-
-     }
-
+      }
     }
+  };
 
+  const handleSubmittG = async (res) => {
+    console.log("[Login Sucess] currentUser: ", res.profileObj);
 
+    await dispatch(LoginU(res.profileObj));
+
+    if (sessionStorage.getItem("Token") === null) {
+
+      toastError("Error no token")
+      sessionStorage.clear();
+      history.push("/login");
+    } else {
+      history.push("/dashboard");
+    }
+  };
+  const onFailure = (res) => {
+    console.log("[Login Failed] res: ", res);
   };
 
   const handleSubmitt = (event) => {
     event.preventDefault();
     validator();
+    if (sessionStorage.getItem("Token") === null) {
+      sessionStorage.clear();
+      history.push("/login");
+    } else {
+      history.push("/dashboard");
+    }
   };
   return (
     <div id="Signup" className="shadow  row ">
@@ -95,22 +99,27 @@ sessionStorage.clear();
         </div>
 
         <br />
+        <br />
+        <br />
+        <br />
+        <form
+          action=""
+          className="sign-auth add-user add-users "
+          onSubmit={handleSubmittG}
+        >
+          {" "}
+          <LoginAuth succes={handleSubmittG} failure={onFailure} />
+          <br />
+          <div className="seperator">
+            <h1>OR</h1>
+          </div>
+        </form>
+
         <form
           action=""
           className=" signup-form add-user add-users "
           onSubmit={handleSubmitt}
         >
-          <br />
-
-          <LoginAuth/>
-          <br/>
-          <br/>
-         
-  <div className="seperator">
-  <h1>OR</h1></div>
-          
-       
-          <br/>
           <div className="row">
             <LabelInput
               visible={visibility.toString()}
@@ -135,7 +144,7 @@ sessionStorage.clear();
               value={state.password}
             />
           </div>
-    
+
           <br />
           <DefaultButton name={"Login"} />
           <br />

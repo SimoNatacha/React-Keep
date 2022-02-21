@@ -14,7 +14,7 @@ function App() {
       <Route    path="/dashboard" component={Dashboard} />
 
       <Route exact path="/">
-        <Redirect to="/login" />
+        <Redirect to="/signup" />
       </Route>
     </Switch>
   );

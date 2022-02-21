@@ -11,6 +11,6 @@ export const createUser = (formData) => {
     console.log('here create user');
     return request('/createUser', 'post', formData);
 }
-export const login = (formData) => {
-    return request('/login', 'post', formData);
+export const login = (formDa) => {
+    return request('/login', 'post', formDa);
 }

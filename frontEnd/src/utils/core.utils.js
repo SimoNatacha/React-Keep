@@ -62,15 +62,19 @@ export const toastInfo = (msg, titleMsg, timeout = null) => {
 };
 
 export const request = async (url, method, data) => {
-  let headers = {
-    accept: "application/json",
-    "content-type": "multipart/form-data",
+  let header = { 
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*'
+    
+  
+
   };
+
   let result = null;
 
   const api = axios.create({
     baseURL: API_URL,
-    header: headers,
+    headers:header,
     responseType: "json",
   });
 

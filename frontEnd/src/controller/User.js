@@ -33,7 +33,7 @@ console.log("success")
             toastSuccess(message)
 
                console.log("response",response)
-               this.setResponse(response);
+               this.setResponse(data);
            } else {
 
             toastError(message)
@@ -46,11 +46,12 @@ console.log("success")
 };
 
 LoginUser = async user => {
+
     await login(user).then(( result ) => {
-
-
+console.log("result", result)
+       
         const { data } = result;
-
+        alert("yes", data)
            const { success, message } = data;
 
            if (success) {

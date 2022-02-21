@@ -16,6 +16,16 @@ export const addUser = (data) => async dispatch => {
 
         if (respond.success) {
             const { response } = respond;
+            sessionStorage.setItem('user', JSON.stringify(response));
+            var _id = JSON.parse( sessionStorage.getItem('user')).id;
+var userI= JSON.parse( sessionStorage.getItem('user'));
+            sessionStorage.setItem(USER_ID,_id);
+
+            sessionStorage.setItem(USER_LOGGED,true);
+        
+            sessionStorage.setItem(ACCESS_TOKEN,respond.token);
+
+            sessionStorage.setItem(USER,userI);
             console.log('success');
             dispatch({
                
@@ -50,10 +60,11 @@ export const LoginU = (data) => async dispatch => {
         await user.LoginUser(data);
         const respond = user.getResponse();
 
-
+        alert("yess")
         if (respond.success) {
 
             const { response } = respond;
+            alert("yes")
             sessionStorage.setItem('user', JSON.stringify(response));
             var _id = JSON.parse( sessionStorage.getItem('user')).id;
 var userI= JSON.parse( sessionStorage.getItem('user'));

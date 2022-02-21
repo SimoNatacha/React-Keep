@@ -1,13 +1,13 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import GoggleKepp from "../assets/images/logo-google-keep.png";
-import { useDispatch } from 'react-redux';
-import { addUser } from '../redux/actions/user';
+import { useDispatch } from "react-redux";
+import { addUser } from "../redux/actions/user";
 import LandingSignup from "../assets/images/undraw_completing_6bhr.svg";
 import { Link, useHistory } from "react-router-dom";
 import LabelInput from "../components/ui/label-input";
 import { isEmptyOrNull, toastError } from "../utils/core.utils";
 import DefaultButton from "../components/ui/default-Button";
-import SignUpAuth from '../auth/Google/SignUpAuth'
+import SignUpAuth from "../auth/Google/SignUpAuth";
 
 export default function Signup() {
   const [visibility, setVisisbility] = useState(false);
@@ -24,7 +24,6 @@ export default function Signup() {
     emailError: null,
   });
 
-
   const handleInput = (evt) => {
     const value = evt.target.value;
 
@@ -35,11 +34,9 @@ export default function Signup() {
     if (!visibility) {
       setVisisbility(!visibility);
     }
-
   };
 
   const handleInputName = (evt) => {
-
     const value = evt.target.value;
 
     if (/[^a-zA-Z]/.test(value)) {
@@ -58,12 +55,11 @@ export default function Signup() {
   const validate = () => {
     const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!state.email || reg.test(state.email) === false) {
-     
-      toastError("Email Field is Invalid")
+      toastError("Email Field is Invalid");
       return false;
     }
     if (/[^a-zA-Z]/.test(state.first_name)) {
-      toastError("Name Field is Invalid")
+      toastError("Name Field is Invalid");
       return false;
     }
     if (
@@ -72,8 +68,7 @@ export default function Signup() {
       isEmptyOrNull(state.email) &&
       isEmptyOrNull(state.password)
     ) {
-  
-      toastError("All Fields are Empty")
+      toastError("All Fields are Empty");
       return false;
     }
     if (
@@ -82,45 +77,35 @@ export default function Signup() {
       isEmptyOrNull(state.first_name) ||
       isEmptyOrNull(state.email)
     ) {
+      toastError("Not all fields are filled");
 
-      toastError("Not all fields are filled")
-     
       return false;
     }
     if (state.confirm_password !== state.password) {
-
-      toastError("Passwords Don't Match!!!")
-      return false;
-      }
-
-    if (!(state.password.length > 8)) {
-
-      toastError("Password should be greater than 8","Password too short!!")
+      toastError("Passwords Don't Match!!!");
       return false;
     }
-    else{
+
+    if (!(state.password.length > 8)) {
+      toastError("Password should be greater than 8", "Password too short!!");
+      return false;
+    } else {
       return true;
     }
   };
 
-  const validator =async ()=>{
-
+  const validator = async () => {
     if (validate()) {
       await dispatch(addUser(state));
 
-      if (sessionStorage.getItem("Token") === null){
-   
+      if (sessionStorage.getItem("Token") === null) {
         sessionStorage.clear();
         // history.push("/signup");
-    
-
-      }else{
-     
+      } else {
         history.push("/dashboard");
-
-     }
+      }
     }
-  }
+  };
   // const onSignIn=(googleUser)=> {
   //   var profile = googleUser.getBasicProfile();
   //   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -128,12 +113,28 @@ export default function Signup() {
   //   console.log('Image URL: ' + profile.getImageUrl());
   //   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
   // }
-  const handleSubmitt =async (event) => {
+
+  const handleSubmittG = async ( res) => {
+
+    console.log("[SignUp Sucess] currentUser: ", res.profileObj);
+
+    await dispatch(addUser(res.profileObj));
+    
+    if (sessionStorage.getItem("Token") === null) {
+      sessionStorage.clear();
+      history.push("/");
+    } else {
+      history.push("/dashboard");
+    }
+  };
+  const onFailure = (res) => {
+    console.log("[Login Failed] res: ", res);
+  };
+  const handleSubmitt = async (event) => {
     event.preventDefault();
     await validator();
- 
 
-  await  setState({
+    await setState({
       first_name: "",
       last_name: "",
       email: "",
@@ -141,8 +142,7 @@ export default function Signup() {
       confirm_password: "",
       emailError: null,
     });
-    console.log("user after",state)
-    
+    console.log("user after", state);
   };
   return (
     <div id="Signup" className="shadow row">
@@ -152,22 +152,27 @@ export default function Signup() {
             <img src={GoggleKepp} alt="" srcSet="" />
             <h1>Create Your Account Here! </h1>
           </div>
+          <br />
+          <br />
 
+          <form
+            action=""
+            className="sign-auth add-user add-users "
+            onSubmit={handleSubmittG}
+          >
+            {" "}
+            <SignUpAuth succes={handleSubmittG} failure={onFailure} />
+            <br />
+            <div className="seperator">
+              <h1>OR</h1>
+            </div>
+          </form>
 
-       
           <form
             action=""
             className="signup-form add-user add-users "
             onSubmit={handleSubmitt}
           >
-  
-     <SignUpAuth/>
-     <br/>
-
-     <div className="seperator">
-     <h1>OR</h1></div>
-
-     <br/>
             <div className="row dp-f">
               <LabelInput
                 visible={visibility.toString()}
@@ -189,7 +194,7 @@ export default function Signup() {
                 value={state.last_name}
               />
             </div>
-            <br/>
+            <br />
 
             <div className="row">
               <LabelInput
@@ -202,7 +207,7 @@ export default function Signup() {
                 value={state.email}
               />
             </div>
-            <br/>
+            <br />
             <div className="row">
               <LabelInput
                 visible={visibility.toString()}
@@ -215,55 +220,54 @@ export default function Signup() {
                 value={state.password}
               />
             </div>
-            <br/>
+            <br />
 
             <div className="row">
-            <LabelInput
-              visible={visibility.toString()}
-              onChange={handleInput}
-              className="br-5 "
-              placeholder="Confirm Password"
-              name="confirm_password"
-              type="password"
-              autoComplete="confirm_password"
-              value={state.confirm_password}
-            />
-          </div>
-          <br/>
+              <LabelInput
+                visible={visibility.toString()}
+                onChange={handleInput}
+                className="br-5 "
+                placeholder="Confirm Password"
+                name="confirm_password"
+                type="password"
+                autoComplete="confirm_password"
+                value={state.confirm_password}
+              />
+            </div>
+            <br />
             <DefaultButton name={"Sign Up"} />
 
             <div className="already-have-account">
               <div className="sub-to-Signup">
-              <br/>
-                <Link style={{fontWeight:'300'}} to=''>
+                <br />
+                <Link style={{ fontWeight: "300" }} to="/login">
                   Already Have an Account? Login Here!!
                 </Link>
-               
               </div>
-              
             </div>
-      
           </form>
         </div>
-    
       </div>
 
+      <div
+        className="column side-landing "
+        style={{ width: "50%", height: "100%" }}
+      >
+        <div className=" side-landing-img">
+          <div className="intro-landing ">
+            <h2>
+              Let's Help You <span>Keep ,Create ,Share and Collaborate </span>
+              your note list
+            </h2>
+          </div>
 
-     <div
-      className="column side-landing "
-      style={{ width: "50%", height: "100%" }}
-    >
-    <div className=" side-landing-img">
-  <div className="intro-landing ">
-  <h2>
-  Let's Help You <span>Keep ,Create ,Share and Collaborate </span>your
-  note list
- </h2>
-  </div>
-
-  <img src={LandingSignup} alt=""  style={{ width: "80%", marginLeft:'30px'}}/>
-  </div>
-    </div>
+          <img
+            src={LandingSignup}
+            alt=""
+            style={{ width: "80%", marginLeft: "30px" }}
+          />
+        </div>
+      </div>
     </div>
   );
 }
