@@ -21,7 +21,9 @@ const SignOutAuth = () => {
        
 			>
 				<div  className="dp-f outG">
-					<Icons focusable="false" name="Out" size="24" />
+				<div className='ic'><Icons focusable="false" name="Out"   className="side-icon" /></div>
+
+					
 					<span>Logout</span></div>
 			</GoogleLogout>
 		</div>
