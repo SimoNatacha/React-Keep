@@ -28,7 +28,7 @@ const Navbar = () => {
 	};
 	const color = '#4f4f4fd2';
 	return (
-		<div className="dp-f nav-bar  ">
+		<div className="dp-f nav-bar ">
 			<div className="keep-icon dp-f ">
 				<div className="list-3 icon">
 					<Icons focusable="false" name="Menu" className="icons-n" color={color} />

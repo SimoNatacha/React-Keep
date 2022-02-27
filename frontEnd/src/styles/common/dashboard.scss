@@ -1,0 +1,28 @@
+.dashboard{
+    display: flex !important;
+    border: 5px solid blue;
+    height: 100vh;
+    flex-direction: column;
+    .nav{
+        flex: 12%;
+        border: 2px solid pink;
+    }
+    .content{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        .side {
+           
+            flex: 15%; 
+            background-color: red;
+          
+          }
+          
+          /* Main column */
+          .main {
+             flex: 70%;
+            background-color: green;
+            padding: 20px;
+          }
+    }
+}
