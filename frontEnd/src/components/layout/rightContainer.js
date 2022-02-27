@@ -13,10 +13,6 @@ const RightLayout = () => {
 	return (
 
 		<Switch>
-
-   
-
-
 			<Route   path={`${path}/notes`} component={Notes}/>
 
 			<Route  path={`${path}/reminders`} component={Reminders}/>
